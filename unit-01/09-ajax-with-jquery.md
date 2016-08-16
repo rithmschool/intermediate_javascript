@@ -1,4 +1,4 @@
-#### [⇐ Previous](./10-how-the-web-works.md) | [Table of Contents](./../readme.md) | [Next ⇒](./12-project-three.md)
+#### [⇐ Previous](./08-how-the-web-works.md) | [Table of Contents](./../readme.md) | [Next ⇒](./10-project-three.md)
 
 # AJAX with jQuery
 

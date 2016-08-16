@@ -1,4 +1,4 @@
-#### [⇐ Previous](./06-constructor-functions.md) | [Table of Contents](./../readme.md) | [Next ⇒](./08-es2015.md)
+#### [⇐ Previous](./05-constructor-functions.md) | [Table of Contents](./../readme.md) | [Next ⇒](./06-es2015.md)
 
 # Prototypes
 

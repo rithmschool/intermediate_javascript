@@ -1,4 +1,4 @@
-#### [⇐ Previous](./11-ajax-with-jquery.md) | [Table of Contents](./../readme.md)
+#### [⇐ Previous](./09-ajax-with-jquery.md) | [Table of Contents](./../readme.md)
 
 # Project Three
 

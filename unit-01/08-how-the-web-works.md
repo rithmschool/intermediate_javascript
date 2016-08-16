@@ -1,4 +1,4 @@
-#### [⇐ Previous](./9-jquery-fundamentals.md) | [Table of Contents](./../readme.md) | [Next ⇒](./11-ajax-with-jquery.md)
+#### [⇐ Previous](./07-jquery-fundamentals.md) | [Table of Contents](./../readme.md) | [Next ⇒](./09-ajax-with-jquery.md)
 
 # How the Web Works
 

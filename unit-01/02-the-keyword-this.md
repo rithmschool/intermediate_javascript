@@ -1,4 +1,4 @@
-#### [⇐ Previous](./03-testing-javascript.md) | [Table of Contents](./../readme.md) | [Next ⇒](./05-call-apply-bind.md)
+#### [⇐ Previous](./01-testing-javascript.md) | [Table of Contents](./../readme.md) | [Next ⇒](./03-call-apply-bind.md)
 
 # The Keyword this
 

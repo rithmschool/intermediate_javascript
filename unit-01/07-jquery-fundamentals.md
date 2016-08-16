@@ -1,4 +1,4 @@
-#### [⇐ Previous](./08-es2015.md) | [Table of Contents](./../readme.md) | [Next ⇒](./10-how-the-web-works.md)
+#### [⇐ Previous](./06-es2015.md) | [Table of Contents](./../readme.md) | [Next ⇒](./08-how-the-web-works.md)
 
 # jQuery Fundamentals
 
