@@ -1,5 +1,7 @@
 ### Intermediate JavaScript and jQuery
 
+### Unit 1
+
 - [01 - Testing JavaScript](./unit-01/01-testing-javascript.md)
 - [02 - The Keyword this](./unit-01/02-the-keyword-this.md)
 - [03 - Call Apply and Bind](./unit-01/03-call-apply-bind.md)
@@ -10,3 +12,5 @@
 - [08 - How the Web Works](./unit-01/08-how-the-web-works.md)
 - [09 - AJAX with jQuery](./unit-01/09-ajax-with-jquery.md)
 - [10 - Project Three ](./unit-01/10-project-three.md)
+
+### Unit 2
