@@ -1,4 +1,4 @@
-#### [⇐ Previous](./06-prototypes.md) | [Table of Contents](./../readme.md) | [Next ⇒](./08-functional-programming.md)
+#### [⇐ Previous](./06-constructor-functions.md) | [Table of Contents](./../readme.md) | [Next ⇒](./08-prototypes.md)
 
 # Intermediate Object Oriented Programming
 
@@ -14,4 +14,4 @@ By the end of this chapter - you should be able to
 
 ### Additional Resources
 
-#### [⇐ Previous](./07-prototypes.md) | [Table of Contents](./../readme.md) | [Next ⇒](./09-jquery-fundamentals.md)
+#### [⇐ Previous](./06-constructor-functions.md) | [Table of Contents](./../readme.md) | [Next ⇒](./08-prototypes.md)

@@ -1,4 +1,4 @@
-#### [⇐ Previous](./08-jquery-fundamentals.md) | [Table of Contents](./../readme.md) | [Next ⇒](./10-project-two.md)
+#### [⇐ Previous](./01-jquery-fundamentals.md) | [Table of Contents](./../readme.md) | [Next ⇒](./03-how-the-web-works.md)
 
 # Intermediate jQuery
 
@@ -352,4 +352,4 @@ Complete the [jQuery Exercise](https://github.com/rithmschool/prework_exercises/
 
 [http://stackoverflow.com/questions/5963669/whats-the-difference-between-event-stoppropagation-and-event-preventdefault](http://stackoverflow.com/questions/5963669/whats-the-difference-between-event-stoppropagation-and-event-preventdefault)
 
-#### [⇐ Previous](./08-jquery-fundamentals.md) | [Table of Contents](./../readme.md) | [Next ⇒](./10-project-two.md)
+#### [⇐ Previous](./01-jquery-fundamentals.md) | [Table of Contents](./../readme.md) | [Next ⇒](./03-how-the-web-works.md)

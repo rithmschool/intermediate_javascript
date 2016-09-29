@@ -1,4 +1,4 @@
-#### [⇐ Previous](./09-javascript-iterators.md) | [Table of Contents](./../readme.md) | [Next ⇒](./11-introduction-to-the-dom.md)
+#### [⇐ Previous](./01-javascript-iterators.md) | [Table of Contents](./../readme.md) | [Next ⇒](./03-testing-javascript.md)
 
 # Recursion 
 
@@ -87,4 +87,4 @@ Complete the [Recursion Exercise](https://github.com/rithmschool/prework_exercis
 
 [Fun Fun Function Recursion](https://www.youtube.com/watch?v=k7-N8R0-KY4)
 
-#### [⇐ Previous](./09-javascript-iterators.md) | [Table of Contents](./../readme.md) | [Next ⇒](./11-introduction-to-the-dom.md)
+#### [⇐ Previous](./01-javascript-iterators.md) | [Table of Contents](./../readme.md) | [Next ⇒](./03-testing-javascript.md)

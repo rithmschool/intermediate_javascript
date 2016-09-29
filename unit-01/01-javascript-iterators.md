@@ -1,4 +1,4 @@
-#### [⇐ Previous](./08-timers-and-callbacks.md) | [Table of Contents](./../readme.md) | [Next ⇒](./10-recursion.md)
+#### [Table of Contents](./../readme.md) | [Next ⇒](./02-recursion.md)
 
 # JavaScript Iterators
 
@@ -298,4 +298,4 @@ var newArr = arr.filter(function(val){
 
 Complete the [Iterators Exercise](https://github.com/rithmschool/prework_exercises/tree/master/iterators_exercise).
 
-#### [⇐ Previous](./08-timers-and-callbacks.md) | [Table of Contents](./../readme.md) | [Next ⇒](./10-recursion.md)
+#### [Table of Contents](./../readme.md) | [Next ⇒](./02-recursion.md)

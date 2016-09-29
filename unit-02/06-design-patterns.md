@@ -1,4 +1,4 @@
-#### [⇐ Previous](./08-how-the-web-works.md) | [Table of Contents](./../readme.md) | [Next ⇒](./10-project-three.md)
+#### [⇐ Previous](./05-async-javascript.md) | [Table of Contents](./../readme.md) | [Next ⇒](./07-functional-programming.md)
 
 # Design Patterns In JavaScript
 
@@ -24,4 +24,4 @@
 
 [http://code.tutsplus.com/tutorials/understanding-design-patterns-in-javascript--net-25930](http://code.tutsplus.com/tutorials/understanding-design-patterns-in-javascript--net-25930)
 
-#### [⇐ Previous](./10-how-the-web-works.md) | [Table of Contents](./../readme.md) | [Next ⇒](./12-project-three.md)
+#### [⇐ Previous](./05-async-javascript.md) | [Table of Contents](./../readme.md) | [Next ⇒](./07-functional-programming.md)

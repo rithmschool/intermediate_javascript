@@ -1,4 +1,4 @@
-#### [⇐ Previous](./05-constructor-functions.md) | [Table of Contents](./../readme.md) | [Next ⇒](./06-es2015.md)
+#### [⇐ Previous](./07-intermediate-oop.md) | [Table of Contents](./../readme.md) | [Next ⇒](./09-es2015.md)
 
 # Prototypes
 
@@ -130,4 +130,4 @@ Complete the [Prototypes Exercise](https://github.com/rithmschool/prework_exerci
 
 [http://www.bennadel.com/blog/2184-object-create-improves-constructor-based-inheritance-in-javascript---it-doesn-t-replace-it.htm](http://www.bennadel.com/blog/2184-object-create-improves-constructor-based-inheritance-in-javascript---it-doesn-t-replace-it.htm)
 
-#### [⇐ Previous](./06-constructor-functions.md) | [Table of Contents](./../readme.md) | [Next ⇒](./08-es2015.md)
+#### [⇐ Previous](./07-intermediate-oop.md) | [Table of Contents](./../readme.md) | [Next ⇒](./09-es2015.md)

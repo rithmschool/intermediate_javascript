@@ -1,4 +1,4 @@
-#### [⇐ Previous](./03-call-apply-bind.md) | [Table of Contents](./../readme.md) | [Next ⇒](./05-prototypes.md)
+#### [⇐ Previous](./05-call-apply-bind.md) | [Table of Contents](./../readme.md) | [Next ⇒](./07-intermediate-oop.md)
 
 # Constructor Functions
 
@@ -119,4 +119,4 @@ Complete the [Constructor Functions Exercise](https://github.com/rithmschool/pre
 
 ### Additional Resources
 
-#### [⇐ Previous](./05-call-apply-bind.md) | [Table of Contents](./../readme.md) | [Next ⇒](./07-prototypes.md)
+#### [⇐ Previous](./05-call-apply-bind.md) | [Table of Contents](./../readme.md) | [Next ⇒](./07-intermediate-oop.md)

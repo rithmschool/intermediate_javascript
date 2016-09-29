@@ -1,4 +1,4 @@
-#### [⇐ Previous](./08-how-the-web-works.md) | [Table of Contents](./../readme.md) | [Next ⇒](./10-project-three.md)
+#### [⇐ Previous](./04-ajax-with-jquery.md) | [Table of Contents](./../readme.md) | [Next ⇒](./06-design-patterns.md)
 
 # AJAX with jQuery
 
@@ -34,4 +34,4 @@ By the end of this chapter - you should be able to
 
 [https://github.com/getify/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch3.md](https://github.com/getify/You-Dont-Know-JS/blob/master/async%20%26%20performance/ch3.md)
 
-#### [⇐ Previous](./10-how-the-web-works.md) | [Table of Contents](./../readme.md) | [Next ⇒](./12-project-three.md)
+#### [⇐ Previous](./04-ajax-with-jquery.md) | [Table of Contents](./../readme.md) | [Next ⇒](./06-design-patterns.md)

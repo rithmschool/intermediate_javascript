@@ -1,4 +1,4 @@
-#### [⇐ Previous](./07-jquery-fundamentals.md) | [Table of Contents](./../readme.md) | [Next ⇒](./09-ajax-with-jquery.md)
+#### [⇐ Previous](./02-intermediate-jquery.md) | [Table of Contents](./../readme.md) | [Next ⇒](./04-ajax-with-jquery.md)
 
 # How the Web Works
 
@@ -71,4 +71,4 @@ Complete the [How The Web Works Exercise](https://github.com/rithmschool/prework
 
 [https://github.com/alex/what-happens-when](https://github.com/alex/what-happens-when)
 
-#### [⇐ Previous](./9-jquery-fundamentals.md) | [Table of Contents](./../readme.md) | [Next ⇒](./11-ajax-with-jquery.md)
+#### [⇐ Previous](./02-intermediate-jquery.md) | [Table of Contents](./../readme.md) | [Next ⇒](./04-ajax-with-jquery.md)

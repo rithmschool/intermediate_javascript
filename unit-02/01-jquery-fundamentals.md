@@ -1,4 +1,4 @@
-#### [⇐ Previous](./07-local-storage.md) | [Table of Contents](./../readme.md) | [Next ⇒](./09-intermediate-jquery.md)
+#### [Table of Contents](./../readme.md) | [Next ⇒](./02-intermediate-jquery.md)
 
 # jQuery Fundamentals
 
@@ -205,4 +205,4 @@ Read on! There will be an exercise waiting for you at the end of the next chapte
 
 ### Additional Resources
 
-#### [⇐ Previous](./07-local-storage.md) | [Table of Contents](./../readme.md) | [Next ⇒](./09-intermediate-jquery.md)
+#### [Table of Contents](./../readme.md) | [Next ⇒](./02-intermediate-jquery.md)

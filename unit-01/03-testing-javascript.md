@@ -1,4 +1,4 @@
-#### [Table of Contents](./../readme.md) | [Next ⇒](./02-the-keyword-this.md)
+#### [⇐ Previous](./02-recursion.md) | [Table of Contents](./../readme.md) | [Next ⇒](./04-the-keyword-this.md)
 
 # Testing JavaScript
 
