@@ -15,7 +15,7 @@
 
 ### Unit 2
 
-- [01 - jQuery Fundamentals](./unit-02/02-jquery-fundamentals.md)
+- [01 - jQuery Fundamentals](./unit-02/01-jquery-fundamentals.md)
 - [02 - Intermediate jQuery](./unit-02/02-intermediate-jquery.md)
 - [03 - How the Web Works](./unit-02/03-how-the-web-works.md)
 - [04 - AJAX with jQuery](./unit-02/04-ajax-with-jquery.md)

@@ -1,6 +1,6 @@
 ### Unit 2 - jQuery, AJAX, Design Patterns, and D3
 
-- [01 - jQuery Fundamentals](./02-jquery-fundamentals.md)
+- [01 - jQuery Fundamentals](./01-jquery-fundamentals.md)
 - [02 - Intermediate jQuery](./02-intermediate-jquery.md)
 - [03 - How the Web Works](./03-how-the-web-works.md)
 - [04 - AJAX with jQuery](./04-ajax-with-jquery.md)
