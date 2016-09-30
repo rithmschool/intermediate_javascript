@@ -7,11 +7,12 @@
 - [03 - Testing JavaScript](./unit-01/03-testing-javascript.md)
 - [04 - The Keyword this](./unit-01/04-the-keyword-this.md)
 - [05 - Call Apply and Bind](./unit-01/05-call-apply-bind.md)
-- [06 - Constructor Functions](./unit-01/06-constructor-functions.md)
-- [07 - Intermediate OOP](./unit-01/07-intermediate-oop.md)
+- [06 - Introduction To Object Oriented Programming](./unit-01/06-introduction-to-oop.md)
+- [07 - Constructor Functions](./unit-01/07-constructor-functions.md)
 - [08 - Prototypes](./unit-01/08-prototypes.md)
-- [09 - ES2015](./unit-01/09-es2015.md)
-- [10 - Project](./unit-01/10-project.md)
+- [09 - Intermediate OOP](./unit-01/09-intermediate-oop.md)
+- [10 - ES2015](./unit-01/10-es2015.md)
+- [11 - Project](./unit-01/11-project.md)
 
 ### Unit 2
 
