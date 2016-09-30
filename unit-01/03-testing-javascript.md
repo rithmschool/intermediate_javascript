@@ -28,7 +28,7 @@ Before we see some code, let's define some technologies and functions we are goi
 
 `chai` - this is our expectation/assertion library. `chai` provides additional ways for you to write tests; in particular, it lets you write tests so that they are quite straightforward to read. This isn't a necessary tool to use if you're writing tests with `mocha`, but you'll very often see them paired together. For now, you can simply think of `chai` as a way to enhance your tests and make them more readable. You can read more about `chai` [here](http://chaijs.com/).
 
-When we write our tests, there are a few functions that we'll be using quite frequently. Here are three of the most important onces:
+When we write our tests, there are a few functions that we'll be using quite frequently. Here are three of the most important ones:
 
 `describe` - this function is given to us by `mocha` and it is what we use to organize our tests. You can think of a `describe` function like talking to someone and telling them "let me describe ____ to you." Very often when you're writing unit tests, you'll have one `describe` block per function you're testing (this will make more sense once you've seen some examples).
 
@@ -63,15 +63,15 @@ var earth = {
 describe("Earth", function(){
 
   it("is round", function(){
-    expect(earth.isRound).to.equal(true)
+    expect(earth.isRound).to.equal(true);
   });
 
   it("is the third planet from the sun", function(){
-    expect(earth.numberFromSun).to.equal(3)
+    expect(earth.numberFromSun).to.equal(3);
   });
 
   it("is the densest of all the planets", function(){
-    expect(earth.density).to.be.at.least(5.51)
+    expect(earth.density).to.be.at.least(5.51);
   });
 
 });
@@ -157,15 +157,15 @@ Next, put the tests where the comment is, and refresh the page:
 	describe("Earth", function(){
 
 		it("is round", function(){
- 			expect(earth.isRound).to.equal(true)
+ 			expect(earth.isRound).to.equal(true);
 		});
 
 		it("is the third planet from the sun", function(){
-			expect(earth.numberFromSun).to.equal(3)
+			expect(earth.numberFromSun).to.equal(3);
 		});
 
 		it("is the densest of all the planets", function(){
-			expect(earth.density).to.be.at.least(5.51)
+			expect(earth.density).to.be.at.least(5.51);
 		});
 
 	});
