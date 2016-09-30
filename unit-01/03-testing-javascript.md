@@ -271,6 +271,55 @@ numbers === numbersOtherCopy // false! even though both arrays have the same str
 
 So, when writing tests, how can we see if two arrays or objects consist of the same values? To do that in our tests we use `deep equal`. Deep equality checks whether the elements in two arrays are equal, rather than simply checking if the two arrays refer to the same place in memory. Along with things like `deep.equal`, `chai` has many many more operators to check for all types of things about our data - it's quite a versatile tool! When writing tests, it's always helpful to have the `chai` [documentation](http://chaijs.com/api/bdd/) open - it's a very useful when trying to formulate the proper `expect` statements. 
 
+### Red, Green, Refactor
+
+Once you get used to writing tests, you can use a workflow very common in TDD. This workflow is called "Red, Green, Refactor," and goes like this:
+
+1. Start by writing a test. Make sure the tests fails (i.e. is red). Writing a failing test is important -- if the test passes before you write any code, then what are you actually testing?
+2. Go write code to make the test pass.
+3. Refactor your code as needed. As long as the tests are still passing, you can be reasonably confident that you aren't introducing new bugs into the program.
+
+Let's walk through this process with a simple example. Suppose you wanted to write a function called `onlyStrings` which takes in an array, and returns only the elements in the array that are strings. Here are some tests you might want to write:
+
+```javascript
+describe("onlyStrings", function(){
+  it("returns an array", function(){
+    expect(onlyStrings([1,2,3])).to.be.an('array');
+  });
+  it("does not change arrays of strings", function(){
+    expect(onlyStrings(["a","b","c"])).to.deep.equal(["a","b","c"]);
+  });
+  it("removes non-string primitives from an array", function(){
+    expect(onlyStrings([1,"hi",null,"cool",undefined,"woah",false,"ok"])).to.deep.equal(["hi","cool","woah","ok"]);
+  });
+  it("removes reference types from an array", function(){
+    expect(onlyStrings([{},"a",[],"b",function(){},"c"])).to.deep.equal(["a","b","c"]);
+  });
+});
+```
+
+After writing the tests, you would then write the `onlyStrings` function. Here's one possible implementation:
+
+```javascript
+function onlyStrings(arr) {
+  var strings = [];
+  for (var i = 0; i < arr.length; i++) {
+    if (typeof arr[i] === "string") strings.push(arr[i]);
+  }
+  return strings;
+}
+```
+
+With this code, the tests should pass. Upon further reflection, however, you may decide to refactor this function so that it uses `filter` instead:
+
+```
+function onlyStrings(arr) {
+  return arr.filter(function(el) { return typeof el === "string"; });
+}
+```
+
+With this implementation, the tests _still_ pass, and you can be fairly certain that your changes to the `onlyStrings` function haven't introduced any new bugs.
+
 ### Unit vs. Integration Tests
 
 As you're reading about testing, you're likely to come across two different kinds of tests: unit tests and integration tests. As you're first writing tests, you'll probably be writing mostly unit tests. These are tests which are written for one small component of your application, e.g. one function. They're meant to test the individual pieces, or _units_ of your application. Integration test, by contrast, are meant to test the system as a whole, and ensure that different pieces of the application are working correctly as a whole. The distinction isn't terribly important right now, but it's good to know what the terms mean and how they're different. For more on this, check out [this](http://stackoverflow.com/questions/5357601/whats-the-difference-between-unit-tests-and-integration-tests) Stack Overflow article.
