@@ -1,4 +1,4 @@
-#### [⇐ Previous](./09-es2015.md) | [Table of Contents](./../readme.md)
+#### [⇐ Previous](./10-es2015.md) | [Table of Contents](./../readme.md)
 
 # Project
 

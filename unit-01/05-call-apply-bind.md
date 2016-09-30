@@ -1,4 +1,4 @@
-#### [⇐ Previous](./04-the-keyword-this.md) | [Table of Contents](./../readme.md) | [Next ⇒](./06-constructor-functions.md)
+#### [⇐ Previous](./04-the-keyword-this.md) | [Table of Contents](./../readme.md) | [Next ⇒](./06-introduction-to-oop.md)
 
 # Call, Apply, and Bind
 

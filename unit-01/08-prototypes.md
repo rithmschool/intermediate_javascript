@@ -1,4 +1,4 @@
-#### [⇐ Previous](./07-intermediate-oop.md) | [Table of Contents](./../readme.md) | [Next ⇒](./09-es2015.md)
+#### [⇐ Previous](./07-constructor-functions.md) | [Table of Contents](./../readme.md) | [Next ⇒](./09-intermediate-oop.md)
 
 # Prototypes
 
