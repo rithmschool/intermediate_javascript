@@ -23,6 +23,6 @@
 - [05 - Async JavaScript](./unit-02/05-async-javascript.md)
 - [06 - Design Patterns](./unit-02/06-design-patterns.md)
 - [07 - Functional Programming](./unit-02/07-functional-programming.md)
-- [07 - Introduction to D3](./unit-02/08-d3-intro.md)
+- [07 - Introduction to D3](./unit-02/08-introduction-to-d3.md)
 - [08 - Intermediate D3](./unit-02/09-intermediate-d3.md)
 - [10 - Project](./unit-02/10-project.md)

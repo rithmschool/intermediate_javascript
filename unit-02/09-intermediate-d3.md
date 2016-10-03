@@ -1,4 +1,4 @@
-#### [⇐ Previous](./08-d3-intro.md) | [Table of Contents](./../readme.md) | [Next ⇒](./10-project.md)
+#### [⇐ Previous](./08-introduction-to-d3.md) | [Table of Contents](./../readme.md) | [Next ⇒](./10-project.md)
 
 # AJAX with jQuery
 
