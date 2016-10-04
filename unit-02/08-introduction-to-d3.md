@@ -1,4 +1,4 @@
-#### [⇐ Previous](./07-functional-programming.md) | [Table of Contents](./../readme.md) | [Next ⇒](./09-intermediate-d3.md)
+#### [⇐ Previous](./07-functional-programming.md) | [Table of Contents](./../readme.md) | [Next ⇒](./09-data-joins-in-d3.md)
 
 # Introduction to D3
 

@@ -8,5 +8,5 @@
 - [06 - Design Patterns](./06-design-patterns.md)
 - [07 - Functional Programming](./07-functional-programming.md)
 - [07 - Introduction to D3](./08-introduction-to-d3.md)
-- [08 - Intermediate D3](./09-intermediate-d3.md)
+- [08 - Data Joins in D3](./09-data-joins-in-d3.md)
 - [10 - Project](./10-project.md)

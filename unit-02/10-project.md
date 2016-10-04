@@ -1,4 +1,4 @@
-#### [⇐ Previous](./09-intermediate-d3.md) | [Table of Contents](./../readme.md)
+#### [⇐ Previous](./09-data-joins-in-d3.md) | [Table of Contents](./../readme.md)
 
 # Project
 

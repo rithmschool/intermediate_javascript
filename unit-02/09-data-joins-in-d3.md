@@ -1,6 +1,6 @@
 #### [⇐ Previous](./08-introduction-to-d3.md) | [Table of Contents](./../readme.md) | [Next ⇒](./10-project.md)
 
-# AJAX with jQuery
+# Data Joins in d3
 
 ### Objectives:
 
