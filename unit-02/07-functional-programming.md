@@ -1,4 +1,4 @@
-#### [⇐ Previous](./06-design-patterns.md) | [Table of Contents](./../readme.md) | [Next ⇒](./08-d3-intro.md)
+#### [⇐ Previous](./06-design-patterns.md) | [Table of Contents](./../readme.md) | [Next ⇒](./08-introduction-to-d3.md)
 
 # Functional Programming
 
