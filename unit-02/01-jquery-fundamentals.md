@@ -13,11 +13,11 @@ By the end of this chapter, you should be able to:
 
 ### What is jQuery?
 
-jQuery is easily one of the most popular JavaScript libraries out there. It is very helpful with DOM manipulation, AJAX and much more. To include it on a page, you can use the CDN here `<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.js"></script>`. All of the jQuery selectors and many functions begin with a `$`. This is just an alias (nickname) for `jQuery`, so if you've installed jQuery, the expression `jQuery === $` will always be true!
+jQuery is easily one of the most popular JavaScript libraries out there. It is very helpful with DOM manipulation, AJAX, and much more. To include it on a page, you can use the CDN here `<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>`. All of the jQuery selectors and many functions begin with a `$`. This is just an alias (nickname) for `jQuery`, so if you've installed jQuery, the expression `jQuery === $` will always be true!
 
 ### Common jQuery methods
 
-For the following examples, you can use this HTML file. Open it up in Chrome and then paste the code samples below into the console to start exploring how jQuery works.
+For the following examples, you can use this HTML file. Open it up in Chrome and then paste the JavaScript code samples below into the console to start exploring how jQuery works.
 
 ```html
 <!DOCTYPE html>
@@ -38,7 +38,7 @@ For the following examples, you can use this HTML file. Open it up in Chrome and
  			<li>Item 2</li>
 		</ul>
 	</article>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
 </body>
 </html>
 ```
@@ -53,9 +53,11 @@ $(document).ready(function(){
 });
 ```
 
+It's critical that you wait for the DOM to load before using jQuery - otherwise you might try to manipulate DOM elements that aren't on the page yet!
+
 #### jQuery objects / get / selectors
 
-To get started with jQuery, let's find some elements in the DOM! The way jQuery selects items from the DOM is through using CSS selectors (another good reason to know them well!), just like `querySelector` and `querySelectorAll`. One of the trickier parts about jQuery is what is actually returned to you when you use many of the functions, including the selectors. When you select something (in the example below this will be all the `article` tags), jQuery returns an (array-like) object called a `jQuery object`. 
+To get started with jQuery, let's find some elements in the DOM! The way jQuery selects items from the DOM is through using CSS selectors (another good reason to know them well!), just like `querySelector` and `querySelectorAll`. One major difference between jQuery methods and the native JavaScript methods, however, is what they return to you. When you select something (in the example below this will be all the `article` tags), jQuery returns an (array-like) object called a `jQuery object`. 
 
 ```javascript
 $(document).ready(function(){
@@ -73,7 +75,7 @@ Here's a quick example:
 
 ```javascript
 $(document).ready(function(){
-    var $divsInsideArticle = $("article").find("div").children();
+    var $childDivsInsideArticle = $("article").find("div").children();
 });
 ```
 
@@ -108,7 +110,7 @@ To access/modify the styles of an element we can use the `css` function (one par
 
 To access/modify the attributes of an element we can use the `attr` function (one parameter for getting a value and two for setting a value). 
 
-To access/modify the data-attributes of an element we can use the .data` function (one parameter for getting a value and two for setting a value). 
+To access/modify the data-attributes of an element we can use the `data` function (one parameter for getting a value and two for setting a value). 
 
 ```javascript
 $(document).ready(function(){
@@ -154,14 +156,15 @@ secondLi.text(); // "Item 2"
 
 #### `after` / `before` / `append` / `prepend`
 
-To add elements to the DOM we can place them `after` a selected element or `before` a selected element. We can also `append` them to a selected element (nested in the element) or `prepend` them to a selected element (nested in the beginning).
+To add elements to the DOM we can place them `after` a selected element or `before` a selected element. We can also `append` them to a selected element (nested at the end of an element) or `prepend` them to a selected element (nested at the beginning).
 
-When creating new elements, there are a couple of different options we can use when adding attributes, text, and so on. Check out the difference between the way we create `newParagraph` and `anotherParagraph` below:
+When creating new elements, there are a couple of different options we can use to add attributes, text, and so on. Check out the difference between the way we create `newParagraph` and `anotherParagraph` below:
 
 ```javascript
 $(document).ready(function(){
     var newParagraph = $("<p>");
     newParagraph.text("Another article");
+    newParagraph.css("color","red");
 
     var anotherParagraph = $("<p>", {
         text:"Shorter than two lines",
@@ -182,14 +185,14 @@ To remove elements from the DOM we can use the `remove` function on a selected e
 
 ```javascript
 $(document).ready(function(){
-    $("article").empty() // remove all content inside the article
-    $("article").remove() // remove the element from the DOM
-})
+    $("article").empty(); // remove all content inside the article
+    $("article").remove(); // remove the article element itself from the DOM
+});
 ```
 
 #### `on` / `off`
 
-To add event listeners we can use the `on` function which takes a selected element (or elements) and attaches an event listener on what has been selected. Just like `addEventListener`, the first parameter is the name of the event followed by a callback function. There is an optional second parameter to `on` which we will examine later when we discuss event delegation. To remove event listeners we use the `off` function.
+To add event listeners we can use the `on` function, which takes a selected element (or elements) and attaches an event listener on what has been selected. Just like `addEventListener`, the first parameter is the name of the event followed by a callback function. There is an optional second parameter to `on` which we will examine later when we discuss event delegation. To remove event listeners we use the `off` function.
 
 ```javascript
 $(document).ready(function(){
@@ -201,7 +204,9 @@ $(document).ready(function(){
 
 ### Exercise
 
-Read on! There will be an exercise waiting for you at the end of the next chapter.
+Go to the [jQuery website](http://jquery.com/) website, hop into the console, and play around with all of the jQuery methods we've discussed here.
+
+After that, read on! There will be an exercise waiting for you at the end of the next chapter.
 
 ### Additional Resources
 
