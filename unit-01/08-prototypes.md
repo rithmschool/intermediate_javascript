@@ -4,7 +4,7 @@
 
 ### Objectives:
 
-By the end of this chapter - you should be able to
+By the end of this chapter, you should be able to:
 
 - Define what an object's prototype is
 - Explain what effect using the `new` keyword has on an object's prototype
