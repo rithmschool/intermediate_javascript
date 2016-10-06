@@ -118,7 +118,7 @@ function Motorcycle(make,model,year,maxSpace){
 
 ### Exercise
 
-Complete the [Constructor Functions Exercise](https://github.com/rithmschool/prework_exercises/tree/master/constructor_functions_exercise)
+Complete the [Constructor Functions Exercise](https://github.com/rithmschool/intermediate_js_exercises/tree/master/constructor_functions_exercise)
 
 ### Additional Resources
 
