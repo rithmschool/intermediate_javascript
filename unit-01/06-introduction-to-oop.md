@@ -9,6 +9,7 @@ By the end of this chapter, you should be able to:
 * Describe OOP without talking about code
 * Define encapsulation
 * Define abstraction
+* Define inheritance
 
 ### What is Object Oriented Programming?
 
@@ -53,17 +54,19 @@ Abstraction is the result of a good object oriented design.  Rather than thinkin
 
 Continuing with our example, if you had a deck of cards class and you saw that you could call the `.shuffle()` function or the `.deal()` function, you would have a good understanding of what the class does without having to understand how the functions are working internally.
 
-### Inheritance And Polymorphism
+### Inheritance
 
-Both of these concepts you will see frequently when you read about what object oriented programming is.  It may be useful to understand them at a high level now, but we will not focus on them when we do OOP in JavaScript
+When a child class _inherits_ functionality from a parent class.  For example a parent class may be an automobile, and it could have a child class for sports car or for truck that has different more specific characteristics.  Both sports cars and trucks share some properties in common but they also have differences that are specific to their own class.  So the truck class would inherit functionality from automobile and the sports car class would inherit from automobile as well.
 
-__Inheritance__ - When a child class _inherits_ functionality from a parent class.  For example a parent class may be an automobile, and it could have a child class for sports car or for truck that has different more specific characteristics.  Both sports cars and trucks share some properties in common but they also have differences that are specific to their own class.  So the truck class would inherit functionality from automobile and the sports car class would inherit from automobile as well.
+### Polymorphism
 
-__Polymorphism__ - Polymorphism is a concept that is not used often in JavaScript.  It is the idea that a set of child classes can treated as its parent, but each child can implement functionality that is specific to it's class.  Going back to the automobile example.  We could treat both a sports car and a truck as an automobile.  An automobile may define an open trunk function.  That function could be implemented differently for a sports car versus a truck, but it would still be available to be called by an automobile.
+Polymorphism may be useful to understand at a high level now, but we will not focus on it when we do OOP in JavaScript.  Polymorphism doesn't apply very well to a language like javascript.
+
+Polymorphism is the idea that an instance of a child class can be treated as if the child class were the parent class.  The child can implement functionality that is specific to it's class, but it can be called in the context of the parent.  Going back to the automobile example.  We could treat both a sports car and a truck as an automobile.  An automobile may define an `openTrunk` function.  That function could be implemented differently for a sports car versus a truck, but it would still be available to be called by an automobile.
 
 We will not cover these topics in great depth but it's good to understand what they are so that you are not surprised when you read it over.
 
 ### Exercises
 
-1. Define _encapsulation_ and _abstraction_ in your own words.
+1. Define _encapsulation_, _abstraction_, and _inheritance_ in your own words.
 1. Think about how you would design a game of checkers. What data do you want to save?  What components are involved in a checkers game that we could turn into a class?  What would the relationship be between one class and another.
