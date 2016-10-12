@@ -1,4 +1,4 @@
-#### [⇐ Previous](./08-introduction-to-d3.md) | [Table of Contents](./../readme.md) | [Next ⇒](./10-project.md)
+#### [⇐ Previous](./08-introduction-to-d3.md) | [Table of Contents](./../readme.md) | [Next ⇒](./10-intermediate-d3.md)
 
 # Data Joins in d3
 
@@ -284,4 +284,4 @@ Complete the [d3 Exercise](https://github.com/rithmschool/intermediate_js_exerci
 
 [http://alignedleft.com/tutorials/d3/binding-data](http://alignedleft.com/tutorials/d3/binding-data)
 
-#### [⇐ Previous](./08-d3-intro.md) | [Table of Contents](./../readme.md) | [Next ⇒](./10-project.md)
+#### [⇐ Previous](./08-introduction-to-d3.md) | [Table of Contents](./../readme.md) | [Next ⇒](./10-intermediate-d3.md)
