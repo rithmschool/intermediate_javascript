@@ -318,6 +318,6 @@ Before using an iterator, it's always good to ask whether `forEach` is the best 
 
 ### Exercise
 
-Complete the [Iterators Exercise](https://github.com/rithmschool/prework_exercises/tree/master/iterators_exercise).
+Complete the [Iterators Exercise](https://github.com/rithmschool/intermediate_js_exercises/tree/master/iterators_exercise).
 
 #### [Table of Contents](./../readme.md) | [Next ⇒](./02-recursion.md)

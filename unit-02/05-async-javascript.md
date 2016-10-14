@@ -1,6 +1,6 @@
 #### [⇐ Previous](./04-ajax-with-jquery.md) | [Table of Contents](./../readme.md) | [Next ⇒](./06-design-patterns.md)
 
-# AJAX with jQuery
+# Async JavaScript
 
 ### Objectives:
 

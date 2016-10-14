@@ -284,4 +284,4 @@ There's plenty more you can do with SVGs (the [MDN docs](https://developer.mozil
 
 Read through [this article](https://www.dashingd3js.com/svg-basic-shapes-and-d3js) on the basics of SVG shapes and d3, and work through the examples. We'll see more examples of d3 shapes in the next chapter! 
 
-#### [⇐ Previous](./07-functional-programming.md) | [Table of Contents](./../readme.md) | [Next ⇒](./09-intermediate-d3.md)
+#### [⇐ Previous](./07-functional-programming.md) | [Table of Contents](./../readme.md) | [Next ⇒](./09-data-joins-in-d3.md)

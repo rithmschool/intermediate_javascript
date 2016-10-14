@@ -81,7 +81,7 @@ As we start thinking about sending data to servers, one of the common ways of do
 
 ### Exercise
 
-Complete the [How The Web Works Exercise](https://github.com/rithmschool/prework_exercises/tree/master/how_the_web_works_exercise)
+Complete the [How The Web Works Exercise](https://github.com/rithmschool/intermediate_js_exercises/tree/master/how_the_web_works_exercise)
 
 ### Additional Resources
 

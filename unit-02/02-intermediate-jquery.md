@@ -364,7 +364,7 @@ Just remember: `stopPropagation` will prevent an event from bubbling up, but it 
 
 ### Exercise
 
-Complete the [jQuery Exercise](https://github.com/rithmschool/prework_exercises/tree/master/jquery_exercise)
+Complete the [jQuery Exercise](https://github.com/rithmschool/intermediate_js_exercises/tree/master/jquery_exercise)
 
 ### Additional Resources
 

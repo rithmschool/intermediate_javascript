@@ -232,8 +232,8 @@ So why did we not use `call` or `apply`? Remember that `bind` does not execute t
 
 ### Exercise
 
-Complete the [Call Apply Bind Exercise](https://github.com/rithmschool/prework_exercises/tree/master/call_apply_bind_exercise)
+Complete the [Call Apply Bind Exercise](https://github.com/rithmschool/intermediate_js_exercises/tree/master/call_apply_bind_exercise)
 
 ### Additional Resources
 
-#### [⇐ Previous](./04-the-keyword-this.md) | [Table of Contents](./../readme.md) | [Next ⇒](./06-constructor-functions.md)
+#### [⇐ Previous](./04-the-keyword-this.md) | [Table of Contents](./../readme.md) | [Next ⇒](./06-introduction-to-oop.md)

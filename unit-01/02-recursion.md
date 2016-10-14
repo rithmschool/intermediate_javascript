@@ -91,7 +91,7 @@ function factorial(num){
 
 ### Exercise
 
-Complete the [Recursion Exercise](https://github.com/rithmschool/prework_exercises/tree/master/recursion_exercise)
+Complete the [Recursion Exercise](https://github.com/rithmschool/intermediate_js_exercises/tree/master/recursion_exercise)
 
 ### Additional Resources
 

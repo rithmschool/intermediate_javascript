@@ -156,7 +156,7 @@ Well, one reason is that many APIs don't let browsers make requests to them. Som
 
 ### Exercise
 
-Complete the [AJAX with jQuery Exercise](https://github.com/rithmschool/prework_exercises/tree/master/ajax_with_jquery_exercise)
+Complete the [AJAX with jQuery Exercise](https://github.com/rithmschool/intermediate_js_exercises/tree/master/ajax_with_jquery_exercise)
 
 ### Additional Resources
 
