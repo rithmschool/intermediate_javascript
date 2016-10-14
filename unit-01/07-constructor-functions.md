@@ -133,4 +133,4 @@ Complete the [Constructor Functions Exercise](https://github.com/rithmschool/int
 
 ### Additional Resources
 
-#### [⇐ Previous](./05-call-apply-bind.md) | [Table of Contents](./../readme.md) | [Next ⇒](./07-intermediate-oop.md)
+#### [⇐ Previous](./06-introduction-to-oop.md) | [Table of Contents](./../readme.md) | [Next ⇒](./08-prototypes.md)

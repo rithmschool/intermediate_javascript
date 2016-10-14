@@ -279,4 +279,4 @@ Complete the [Prototypes Exercise](https://github.com/rithmschool/intermediate_j
 
 [http://www.bennadel.com/blog/2184-object-create-improves-constructor-based-inheritance-in-javascript---it-doesn-t-replace-it.htm](http://www.bennadel.com/blog/2184-object-create-improves-constructor-based-inheritance-in-javascript---it-doesn-t-replace-it.htm)
 
-#### [⇐ Previous](./07-intermediate-oop.md) | [Table of Contents](./../readme.md) | [Next ⇒](./09-es2015.md)
+#### [⇐ Previous](./07-constructor-functions.md) | [Table of Contents](./../readme.md) | [Next ⇒](./09-intermediate-oop.md)
