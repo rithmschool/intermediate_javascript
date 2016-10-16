@@ -1,12 +1,14 @@
 #### [⇐ Previous](./06-design-patterns.md) | [Table of Contents](./../readme.md) | [Next ⇒](./08-introduction-to-d3.md)
 
+# Functional Programming in JavaScript
+
 ### Objectives:
 
 By the end of this chapter - you should be able to
 
 - Define what functional programming is
 - Understand key components of functional programming like pure functions, composition and currying
-- Examine what reactive programming and observables are
+- Write curry, compose and flow functions
 
 ### Functional Programming
 
