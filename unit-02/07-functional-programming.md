@@ -23,18 +23,18 @@ Let's try to identify some pure and impure functions:
 Are the following functions **pure** or **impure**?
 
 ```js
-var arr = [2,4,6]
+var arr = [2,4,6];
 function doubleValues(arr){
     for(var i =0; i< arr.length; i++){
-        arr[i] = arr[i]*2
+        arr[i] = arr[i]*2;
     }
 }
 
-doubleValues(arr)
-arr // [4, 8, 12]
+doubleValues(arr);
+arr; // [4, 8, 12]
 
-doubleValues(arr)
-arr // [8, 16, 24]
+doubleValues(arr);
+arr; // [8, 16, 24]
 ```
 
 The function is **impure** because there is a side effect, we are mutating or changing the `arr` variable and if we call this function again, we will get a different value!
@@ -43,13 +43,13 @@ The function is **impure** because there is a side effect, we are mutating or ch
 var arr = [2,4,6]
 function doubleValues(arr){
     return arr.map(function(val){
-        return val*2
+        return val*2;
     })
 }
 
-doubleValues(arr) // [4,8,12]
-doubleValues(arr) // [4,8,12]
-doubleValues(arr) // [4,8,12]
+doubleValues(arr); // [4,8,12]
+doubleValues(arr); // [4,8,12]
+doubleValues(arr); // [4,8,12]
 ```
 
 This function is **pure** because there is no side effect, if we wanted to double the result of double, we could combine these functions together! `doubleValues(doubleValues(arr)) // [8,16,24]` and we still would not change the `arr` variable. Pretty cool!
@@ -60,7 +60,7 @@ How about this one?
 var start = {};
 
 function addNameToObject(obj,val){
-    obj.name = val
+    obj.name = val;
     return obj;
 }
 ```
@@ -71,8 +71,8 @@ The function is **impure** because there is a side effect, we are mutating or ch
 var start = {};
 
 function addNameToObject(obj,val){
-    var newObj = {name: val}
-    return Object.assign({}, obj, newObj)
+    var newObj = {name: val};
+    return Object.assign({}, obj, newObj);
 }
 ```
 
@@ -85,8 +85,8 @@ function addToArr(arr,val){
     return arr;
 }
 
-addToArr(arr, 5) // [1,2,3,4,5]
-arr // [1,2,3,4,5]
+addToArr(arr, 5); // [1,2,3,4,5]
+arr; // [1,2,3,4,5]
 ```
 
 The function is **impure** because there is a side effect and we are mutating or changing the `arr` variable. if we call this function again, we will get a different value!
@@ -98,7 +98,7 @@ function addToArr(arr,val){
     return newArr;
 }
 
-addToArr(arr, 5) // [1,2,3,4,5]
+addToArr(arr, 5); // [1,2,3,4,5]
 ```
 
 The function is **pure** because there is a not side effect and we are notmutating or changing the `arr` variable. if we call this function again, we will get a different value!
@@ -111,7 +111,7 @@ Another very common tool with functional programming is the use of closures, or 
 
 ```js
 function outer(){
-    var num = 10
+    var num = 10;
     return function inner(newNum){
         // the inner function makes use of num
         // which was defined in the outer function 
@@ -130,16 +130,16 @@ Currying is the process of breaking down a function that takes multiple argument
 ```js
 function simpleCurry(fn, ...outerArgs){
     return function(...innerArgs){
-        return fn.apply(this, outerArgs.concat(innerArgs))
+        return fn.apply(this, outerArgs.concat(innerArgs));
     }
 }
 
 function add(a,b){
-    return a+b
+    return a+b;
 }
 
-var a1 = simpleCurry(a1,2)
-a1(10) // 12
+var a1 = simpleCurry(a1,2);
+a1(10); // 12
 ```
 
 This simpleCurry works fine when we only have two parameters, but what happens if we have an infinite number of arguments? Or what happens if we don't bother to pass in a value at all? Let's look at a more complex curry.
@@ -156,7 +156,7 @@ function complexCurry(fn) {
     }
   };
 }
-complexCurry(add)()()()(2)()()()(4) // 6
+complexCurry(add)()()()(2)()()()(4); // 6
 ```
 
 You can read more about currying [here](https://medium.com/javascript-scene/curry-or-partial-application-8150044c78b8#.fl7cycdpe), [here](http://blog.carbonfive.com/2015/01/14/gettin-freaky-functional-wcurried-javascript/), and [here](https://medium.com/@kbrainwave/currying-in-javascript-ce6da2d324fe#.pnzb8aq4c)
@@ -174,9 +174,8 @@ We could do that as:
 
 ```js
 function convert(str){
-    return str.
-
-                split('')
+    return str.toUpperCase()
+                .split('')
                 .reverse()
                 .filter(function(val){
                     return ["A","E","I","O","U"].indexOf(val) !== -1
@@ -193,7 +192,7 @@ This works totally fine, but what if we could combine all our functions into a s
 function compose(...functions) {
     return function(start){
         return functions.reduceRight(function(acc, next) {
-            return next(acc)
+            return next(acc);
         } , start);
     } 
 } 
@@ -221,11 +220,11 @@ Now let's curry our functions and pass them into compose.
 
 ```js
 var join = complexCurry(function(str, arr){
-    return arr.join(str)
+    return arr.join(str);
 })
 
 var filter = complexCurry(function(fn,arr){
-    return arr.filter(fn)
+    return arr.filter(fn);
 })
 
 var removeLetters = complexCurry(function(str){
@@ -250,7 +249,7 @@ var convertLetters = compose(
     reverse(),
     split(''),
     toUpperCase()
-)
+);
 
 console.log(convertLetters('This is some pretty crazy stuff')); //U:A:E:E:O:I:I
 ```
@@ -276,7 +275,7 @@ var convertLetters = flow(
     reverse(),
     filter(removeLetters),
     join(':')
-)
+);
 
 console.log(convertLetters('This is some pretty crazy stuff')); //U:A:E:E:O:I:I
 ```

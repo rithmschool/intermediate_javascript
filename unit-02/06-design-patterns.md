@@ -41,7 +41,7 @@ Before we examine the module patterns, let's redefine what a "module" is. A modu
 var myModule = (function() {
 
     // A private variable inside the scope of the IIFE that is 
-    var privateVariable = "secret"
+    var privateVariable = "secret";
 
     // A private function inside the scope of the IIFE
     function privateFunction() {
@@ -55,7 +55,7 @@ var myModule = (function() {
 
         // A public function utilizing privates
         displayPrivateVariable: function() {
-            console.log(privateVariable)
+            console.log(privateVariable);
         },
         invokePrivateFunction: function() {
             privateFunction();
@@ -131,13 +131,13 @@ var firstSingleton = (function(){
         var privateName = "Samuel Singleton";
         
         function privateMethod(){
-            return "Your name is " + privateName
+            return "Your name is " + privateName;
         }
 
         return {
             sayMyName: privateMethod,
             increment: function(){
-                count++
+                count++;
                 return count;
             },
             getCount: function(){
@@ -164,10 +164,10 @@ var two = firstSingleton.findOrCreateInstance();
 
 one === two // true
 
-one.increment() // 1
-one.increment() // 2
-one.increment() // 3
-two.getCount() // 3
+one.increment(); // 1
+one.increment(); // 2
+one.increment(); // 3
+two.getCount(); // 3
 
 ``` 
 

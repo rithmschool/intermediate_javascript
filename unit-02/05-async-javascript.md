@@ -33,9 +33,9 @@ So how does JavaScript do it? The answer is through the event loop! You can read
 
 ```js
 $.getJSON("http://www.omdbapi.com/?t=titanic", function(data){
-    console.log(data)
+    console.log(data);
 }, function(error){
-    console.log("Oops something went wrong!", data)
+    console.log("Oops something went wrong!", data);
 })
 ```
 
@@ -43,19 +43,19 @@ But when we need to manage async code in a certain order, we nest our callbacks:
 
 ```js
 $.getJSON("http://www.omdbapi.com/?t=titanic", function(data){
-    console.log("Titanic - ", data)
+    console.log("Titanic - ", data);
     $.getJSON("http://www.omdbapi.com/?t=ghostbusters", function(data){
-        console.log("Ghostbusters -", data)
+        console.log("Ghostbusters -", data);
         $.getJSON("http://www.omdbapi.com/?t=sharknado", function(data){
-            console.log("Sharknado -", data)
+            console.log("Sharknado -", data);
         }, function(error){
-            console.log("Oops something went wrong!", data)
+            console.log("Oops something went wrong!", data);
         })
     }, function(error){
-        console.log("Oops something went wrong!", data)
+        console.log("Oops something went wrong!", data);
     })
 }, function(error){
-    console.log("Oops something went wrong!", data)
+    console.log("Oops something went wrong!", data);
 })
 ```
 
@@ -81,17 +81,17 @@ Let's see what this looks like:
 function firstPromise(){
     return new Promise(function(resolve,reject){
         if(Math.random() > .5){
-            resolve("You made it!")
+            resolve("You made it!");
         } else {
-            reject("Your number was too low! Try again")
+            reject("Your number was too low! Try again");
         }
     })
 }
 
 firstPromise().then(function(data){
-    console.log(data)
+    console.log(data);
 }).catch(function(error){
-    console.log(error)
+    console.log(error);
 })
 
 ```
@@ -120,9 +120,9 @@ function getMovieData(title){
 }
 
 Promise.all([getMovieData("Titanic"), getMovieData("Ghostbusters"), getMovieData("Sharknado")]).then(function(data){
-    console.log(data)
+    console.log(data);
 }).catch(function(err){
-    console.log("Oops, something went wrong!")
+    console.log("Oops, something went wrong!");
 })
 ```
 
@@ -132,8 +132,8 @@ We can also return the value of promise to another, lets try this example by ret
 function first(){
     return new Promise(function(resolve,reject){
         setTimeout(function(){
-            console.log("first is done")
-            resolve(10)
+            console.log("first is done");
+            resolve(10);
         },500)
     })
 }
@@ -141,8 +141,8 @@ function first(){
 function second(previousPromiseData){
     return new Promise(function(resolve,reject){
          setTimeout(function(){
-            console.log("second is done and we just got", previousPromiseData)
-            resolve(previousPromiseData + 10)
+            console.log("second is done and we just got", previousPromiseData);
+            resolve(previousPromiseData + 10);
          },500)
      })
 }
@@ -150,15 +150,15 @@ function second(previousPromiseData){
 function third(previousPromiseData){
     return new Promise(function(resolve,reject){
          setTimeout(function(){
-            console.log("third is done and the total is", previousPromiseData + 10)
-            resolve()
+            console.log("third is done and the total is", previousPromiseData + 10);
+            resolve();
          },500)
      })
 }
 
 first()
     .then(second)
-    .then(third)
+    .then(third);
 ```
 
 ### Generators
@@ -168,22 +168,22 @@ In ES2015, a special type of function called a `generator` was introduced. Gener
 ```js
 function* firstGenerator(){
     for(var i = 0; i<5; i++){
-        yield i
+        yield i;
     }
 }
 
 var gen = firstGenerator();
-gen.next() // {value: 0, done: false}
-gen.next() // {value: 1, done: false}
-gen.next() // {value: 2, done: false}
-gen.next() // {value: 3, done: false}
-gen.next() // {value: 4, done: false}
-gen.next() // {value: 5, done: true}
+gen.next(); // {value: 0, done: false}
+gen.next(); // {value: 1, done: false}
+gen.next(); // {value: 2, done: false}
+gen.next(); // {value: 3, done: false}
+gen.next(); // {value: 4, done: false}
+gen.next(); // {value: 5, done: true}
 
 // we can also iterate over a generator using a for..of loop
 
 for(var data of firstGenerator()){
-    console.log(data)
+    console.log(data);
 }
 
 // 0 
@@ -200,15 +200,15 @@ Let's now see what our async example would look like if we used generators:
 function getMovieData(title){
     $.getJSON(`http://www.omdbapi.com/?t=${title}`, function(data){
         // we could also do gen.next(data) to make this function run all three at once
-        console.log(data)
+        console.log(data);
     }, function(err){
-        console.log(err)
+        console.log(err);
     })
 }
 
 function *displayResults() {
     var result1 = yield getMovieData("Titanic");
-    console.log(result1)
+    console.log(result1);
     var result2 = yield getMovieData("Ghostbusters");
     console.log(result2);
     var result3 = yield getMovieData("Sharknado");
@@ -222,7 +222,7 @@ var gen = displayResults();
 
 // if we want to print all without using next()
 for(var movieData of gen){
-    console.log(movieData)
+    console.log(movieData);
 }
 ```
 
@@ -252,7 +252,7 @@ var request = require('request');
 // Using Promises alone
 function getMovieWithPromises (title) {
     return new Promise(function(resolve, reject) {
-        request(`http://www.omdbapi.com/?t=${title}`, function(err, res, body) {
+        request(`http://www.omdbapi.com/?t=${title}`, function(err, res, body){
         if (err) {
             reject(err);
         }
@@ -264,34 +264,34 @@ function getMovieWithPromises (title) {
 
 function showDataWithPromises(title){
     getMovieWithPromises(title).then(function(data){
-        console.log("movie loaded!")
-        console.log(data)
+        console.log("movie loaded!");
+        console.log(data);
     }).catch(function(err){
-        console.log(err)
+        console.log(err);
     })
 }
 
-showDataWithPromises("Titanic")
+showDataWithPromises("Titanic");
 
 // Using Async Functions
 
     // make use of the previously defined getMovieWithPromises since async functions return a Promise
 async function showDataWithAsync(title){
-  var data = await getMovieWithPromises(title)
-  console.log(data)
+  var data = await getMovieWithPromises(title);
+  console.log(data);
 }
 
 // since async functions return a promise we can even chain them if we'd like!
 showDataWithAsync("Titanic").then(function(data){
-    console.log("movie loaded!")
-    console.log(data)
+    console.log("movie loaded!");
+    console.log(data);
 }).catch(function(err){
-    console.log("Something went wrong!", err)
+    console.log("Something went wrong!", err);
 })
 
 // We can operate on the result of these functions just like with Promises
 Promise.all([showDataWithAsync("Titanic"), showDataWithAsync("Ghostbusters")]).then(function(data){
-    console.log(data)
+    console.log(data);
 });
 
 ```
