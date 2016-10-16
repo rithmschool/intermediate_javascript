@@ -163,20 +163,19 @@ You can read more about currying [here](https://medium.com/javascript-scene/curr
 
 Very commonly, currying is used to combine two or more functions to produce a new function. We call this process of combining functions "composition". Let's imagine that we want to do the following to a string of data
 
-- reverse the string
-- make sure every variable is upper case
-- filter out all of the vowels
+- Uppercase the string
+- Reverse it
+- filter out everything that is not a vowels
 - join it back into a string with a ":" in the middle.
 
 We could do that as:
 
 ```js
 function convert(str){
-    return str.split('')
+    return str.
+
+                split('')
                 .reverse()
-                .map(function(val){
-                    return val.toUpperCase();
-                })
                 .filter(function(val){
                     return ["A","E","I","O","U"].indexOf(val) !== -1
                 })
@@ -219,44 +218,48 @@ function complexCurry(fn) {
 Now let's curry our functions and pass them into compose.
 
 ```js
-var join = curry(function(str, arr){
+var join = complexCurry(function(str, arr){
     return arr.join(str)
 })
 
-var toUpperCase = curry(function(str){
-    return str.toUpperCase();
+var filter = complexCurry(function(fn,arr){
+    return arr.filter(fn)
 })
 
-var split = curry(function(delimiter, str){
-    return str.split(delimiter);
-})
-
-var removeLetters = curry(function(str){
+var removeLetters = complexCurry(function(str){
     return ["A","E","I","O","U"].indexOf(str) !== -1;
 })
 
-var reverse = curry(function(arr){
+var reverse = complexCurry(function(arr){
     return arr.reverse();
 })
 
+var split = complexCurry(function(delimiter, str){
+    return str.split(delimiter);
+})
+
+var toUpperCase = complexCurry(function(str){
+    return str.toUpperCase();
+})
+
 var convertLetters = compose(
-    join(''),
+    join(':'),
     filter(removeLetters),
     reverse(),
     split(''),
     toUpperCase()
 )
 
-console.log(convertLetters('This is some pretty crazy stuff')); // UAEEOII
+console.log(convertLetters('This is some pretty crazy stuff')); //U:A:E:E:O:I:I
 ```
 
 If we wanted to start with the outer most function `f -> g -> x` we can use what is called a `pipe` or `flow` function.
 
 ```js
 function flow(...functions) {
-    return function start(){
+    return function(start){
         return functions.reduce(function(acc, next) {
-            next(acc)
+            return next(acc)
         } , start);
     } 
 } 
@@ -270,10 +273,10 @@ var convertLetters = flow(
     split(''),
     reverse(),
     filter(removeLetters),
-    join('')
+    join(':')
 )
 
-console.log(convertLetters('This is some pretty crazy stuff'));
+console.log(convertLetters('This is some pretty crazy stuff')); //U:A:E:E:O:I:I
 ```
 
 You can read more about function composition [here](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-function-composition-20dfb109a1a0#.15n09uqc1)
