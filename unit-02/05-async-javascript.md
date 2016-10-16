@@ -17,7 +17,7 @@ A process can have many threads, if multi-threading is supported. In JavaScript,
 
 ### Concurrency 
 
-Concurrency occurs when more than one task makes progress regardles of another task. This means that if two taskes are happening, the second does not need to wait for the first to finish before it can complete execution. Concurrency can occur on one a single thread and that is how asynchronous tasks happen with JavaScript.
+Concurrency occurs when more than one task makes progress regardless of another task. This means that if two tasks are happening, the second does not need to wait for the first to finish before it can complete execution. Concurrency can occur on one a single thread and that is how asynchronous tasks happen with JavaScript.
 
 ### Parallelism 
 
@@ -61,9 +61,9 @@ One of the simplest ways of managing asynchronous code is through the use of cal
 
 ### Promises
 
-Promises are almost always preferred over callbacks when managing asynchronous code. Promises make use of callback functions, but help avoid nested and improve readability. Another advantage of promises is that they are immutable, so once a promise is done, you can not accidentally call it again (something you can do accidentaly with callbacks).
+Promises are almost always preferred over callbacks when managing asynchronous code. Promises make use of callback functions, but help avoid nested and improve readability. Another advantage of promises is that they are immutable, so once a promise is done, you can not accidentally call it again (something you can do accidentally with callbacks).
 
-ES2015 introduces a native Promise API, but promises have been in use for quite a while. Different libraries have their own implementation of Promises (previously called "deffereds" in jQuery), but the idea is very similar between all of them. 
+ES2015 introduces a native Promise API, but promises have been in use for quite a while. Different libraries have their own implementation of Promises (previously called "deferreds" in jQuery), but the idea is very similar between all of them. 
 
 Think of a promise as a future notice of information. Kyle Simpson gives the good analogy of ordering a cheeseburger at a fast food restaurant. 
 

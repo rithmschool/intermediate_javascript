@@ -10,7 +10,7 @@ By the end of this chapter - you should be able to
 
 ### Functional Programming
 
-When first looking at what functional programming you come accross a myriad of complex terms like monads and lambda calculus, but let's start with a simpler definition. Functional programming is an alternative to object oriented programming and it conists of building programs with small, reusable functions. That may seem trivial, but there are special conditions that these functions will need to have. First, we want to always strive to create "pure" functions.
+When first looking at what functional programming you come across a myriad of complex terms like monads and lambda calculus, but let's start with a simpler definition. Functional programming is an alternative to object oriented programming and it consists of building programs with small, reusable functions. That may seem trivial, but there are special conditions that these functions will need to have. First, we want to always strive to create "pure" functions.
 
 ### Pure Functions
 

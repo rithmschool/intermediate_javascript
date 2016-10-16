@@ -35,7 +35,7 @@ function Person(firstName, lastName){
 
 ### Module Pattern
 
-Before we examine the module patterns, let's redefine what a "module" is. A module is a self-contained (or encapsulated) and reusable piece of code. The Module Pattern is an alternative to creating a class, and allows us to emulative native functionality in other programming languages. In modules, we can declare public and private variables and methods inside one object, and avoid variable collisions in the global scope. The module pattern makes use of `closure` to create private variables and uses an `IIFE` (Immidiately Invoked Function Expression) for an easier syntax when accessing the module. Here is an example of the module pattern
+Before we examine the module patterns, let's redefine what a "module" is. A module is a self-contained (or encapsulated) and reusable piece of code. The Module Pattern is an alternative to creating a class, and allows us to emulative native functionality in other programming languages. In modules, we can declare public and private variables and methods inside one object, and avoid variable collisions in the global scope. The module pattern makes use of `closure` to create private variables and uses an `IIFE` (Immediately Invoked Function Expression) for an easier syntax when accessing the module. Here is an example of the module pattern
 
 ```js
 var myModule = (function() {
@@ -79,7 +79,7 @@ var myModule = (function(j, r) {
 
 ```
 
-The module patterns ia great way to create private variables and encapsulation in our code. A potential disadvantage is that private variables are not very flexible, which can make testing modules challenging and fixing bugs difficult when there is an issue with private variables and methods.
+The module patterns is great way to create private variables and encapsulation in our code. A potential disadvantage is that private variables are not very flexible, which can make testing modules challenging and fixing bugs difficult when there is an issue with private variables and methods.
 
 You can read much more about the module pattern [here](http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html)
 
@@ -215,7 +215,7 @@ var module = (function() {
 module.facade( {run: true, val: 10} );
 ```
 
-We can see here that we are abstracting quite a bit of detail when the facade function is called. When you find yourself using a library or framework and using many predetermined values (esspecially for keys in objects), you very well may be using a facade! 
+We can see here that we are abstracting quite a bit of detail when the facade function is called. When you find yourself using a library or framework and using many predetermined values (especially for keys in objects), you very well may be using a facade! 
 
 ### Observer Pattern
 
@@ -223,7 +223,7 @@ The Observer pattern  is where on object (the subject), has a list of objects th
 
 You can find some great examples of the observer pattern [here](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#observerpatternjavascript)
 
- The Observer pattern is quite common in popular JavaScript libaries like RxJS and Redux. You have also already seen many examples of the Observer pattern with jQuery methods like `on()` and `off()` to subscribe and unsubscribe to events.
+ The Observer pattern is quite common in popular JavaScript libraries like RxJS and Redux. You have also already seen many examples of the Observer pattern with jQuery methods like `on()` and `off()` to subscribe and unsubscribe to events.
 
 ### Additional Resources
 
