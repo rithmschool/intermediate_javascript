@@ -1,14 +1,11 @@
 #### [⇐ Previous](./04-ajax-with-jquery.md) | [Table of Contents](./../readme.md) | [Next ⇒](./06-design-patterns.md)
 
-# Async JavaScript
-
 ### Objectives:
 
 By the end of this chapter - you should be able to
 
-- Define what AJAX is and how it is used with jQuery
-- Describe how jQuery manages asynchronous code with callbacks and deferreds 
-- Explain some drawbacks to using AJAX and why it can not be used to communicate with some APIs
+- Define key terms like threads, parallelism and concurrency
+- Use callbacks, promises, generators and ES2017 async functions to handle asynchronous code
 
 ### Key Definitions + How JavaScript Works
 
@@ -25,6 +22,12 @@ By the end of this chapter - you should be able to
 ### Generators
 
 ### Observables
+
+[http://reactivex.io/learnrx/](http://reactivex.io/learnrx/)
+
+You can learn more about Observables starting [here](https://egghead.io/lessons/javascript-introducing-the-observable)
+
+### ES2017 Async Functions
 
 ### Exercise
 
