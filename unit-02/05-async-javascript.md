@@ -1,5 +1,7 @@
 #### [⇐ Previous](./04-ajax-with-jquery.md) | [Table of Contents](./../readme.md) | [Next ⇒](./06-design-patterns.md)
 
+# Asynchronous JavaScript
+
 ### Objectives:
 
 By the end of this chapter - you should be able to

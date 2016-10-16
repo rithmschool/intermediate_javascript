@@ -245,7 +245,7 @@ arr.filter(function(val){
 
 This sort of chaining helps keep your code easy to reason about, because each callback is only responsible for one thing. To make things even more readable, you could give names to the callbacks:
 
-```
+```js
 var arr = [1,2,3,4,5];
 
 function isNumberOdd(val) {
