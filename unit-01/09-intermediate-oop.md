@@ -52,6 +52,7 @@ Now that we have grouped some of the objects in the program, let's diagram it.  
 
 ### Exercise
 
+Try to implement tic tac toe based on the design we've started.  You can get started with the code [here](https://github.com/rithmschool/intermediate_js_exercises/tree/master/intermediate_oop/tic_tac_toe)
 
 ### Additional Resources
 
