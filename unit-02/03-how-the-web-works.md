@@ -63,21 +63,25 @@ code.org has a great video series to get you started
 
 `cURL` - cURL is a computer software project providing a library and command-line tool for transferring data using various protocols. You can get started with a nice tutorial [here](https://gist.github.com/caspyin/2288960)
 
-### Parts of a URL (from MDN)
+### Parts of a URL
 
-As we start thinking about sending data to servers, one of the common ways of doing that is through parts of a URL - specifically the query string. Let's examine the parts of a URL with the following example: `http://www.rithmschool.com:80/users?first=elie&second=tim#main`
+A url has different components that we must be able to identify as web developers.  Let's look at the following example to talk about each part:
 
-- Protocol - `http`. http:// is the protocol. It indicates which protocol the browser must use. Usually it is the HTTP protocol or its secured version, HTTPS. The Web requires one of these two, but browsers also know how to handle other protocols such as mailto: (to open a mail client) or ftp: to handle file transfer, so don't be surprised if you see such protocols.
+__`http://www.rithmschool.com:80/users?first=elie&second=tim#main`__
 
-- Domain Name - `www.rithmschool.com` is the domain name. It indicates which Web server is being requested. Alternatively, it is possible to directly use an IP address, but because it is less convenient, it is not often used on the Web.
+- Protocol - `http`. http:// is the protocol (a well defined way of exchanging information).  Http as well as https is the most common way of exchanging information on the internet using your browser.
 
-- Port - `:80` is the port. It indicates the technical "gate" used to access the resources on the web server. It is usually omitted if the web server use the standard ports of the HTTP protocol (80 for HTTP and 443 for HTTPS) to grant access to its resources. Otherwise it is mandatory.
+- Domain Name - `www.rithmschool.com` is the domain name.  A domain name is a human readable address for your website.  However, your computer must look up an _IP address_ using a service called DNS in order to communicate with the correct computer on the internet.
 
-- Path - `/users` is the path to the resource on the Web server. In the early days of the Web, a path like this represented a physical file location on the Web server. Nowadays, it is mostly an abstraction handled by Web servers without any physical reality.
+- Port - `:80` is the port.  A port establishes a logical pathway for information to travel on a computer.  It allows different programs on the computer to run on different ports. A valid port number can be 1 through 65535.   Typically we do not have to specify the port when using websites.  Sites with the protocol `http` default to port 80 and sites with the protocol `https` default to port 443.
 
-- Parameters - `first=elie&second=tim` are extra parameters provided to the Web server. Those parameters are a list of key/value pairs separated with the & symbol. The Web server can use those parameters to do extra stuff before returning the resource. Each Web server has its own rules regarding parameters, and the only reliable way to know if a specific Web server is handling parameters is by asking the Web server owner. The portion of the URL that begins with a `?` is known as the `query string`.
+- Path - `/users` is the path to the resource on the Web server.  A path may relate to a file that the web server has in its hard drive or an abstract resource that the web server is able to create, read update or delete.
 
-- Anchor - `#main` is an anchor to another part of the resource itself. An anchor represents a sort of "bookmark" inside the resource, giving the browser the directions to show the content located at that "bookmarked" spot. On an HTML document, for example, the browser will scroll to the point where the anchor is defined; on a video or audio document, the browser will try to go to the time the anchor represents. It is worth noting that the part after the #, also known as fragment identifier, is never sent to the server with the request.
+- Parameters - `first=elie&second=tim` are extra parameters provided to the Web server. Parameters are a list of keys and values.  In the above example, `first` is a key and `second` is a key. `elie` is the value for `first` and `tim` is the value for `second`.  These keys can be used by the web server to change the http response returned in some way.  Each key value pair in the url is separated by a `&`.  To indicate that the parameter string is starting, a url has a `?`. 
+
+
+- Anchor - `#main` is an anchor to another location on the page. An anchor represents a place on the page that the browser should scroll down to.  With modern web pages, some applications have began to use the anchor tag as a way to remember which content to display.  
+
 
 ### Exercise
 
