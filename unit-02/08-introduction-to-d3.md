@@ -15,7 +15,7 @@ By the end of this chapter, you should be able to:
 
 ### What is d3?
 
-[d3](https://d3js.org/) is a popular and powerful JavaScript library used for data visualization. The term d3 is short for ddd, which itself is short for **d**ata **d**riven **d**ocuments. Any time you see an interactive graph or data visualization on the internet, you should suspect that d3 is being used. For example, The New York Times uses d3 for its interactive articles; [here's](http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html?_r=0).
+[d3](https://d3js.org/) is a popular and powerful JavaScript library used for data visualization. The term d3 is short for ddd, which itself is short for **d**ata **d**riven **d**ocuments. Any time you see an interactive graph or data visualization on the internet, you should suspect that d3 is being used. For example, The New York Times uses d3 for its interactive articles; [here's](http://www.nytimes.com/interactive/2012/05/17/business/dealbook/how-the-facebook-offering-compares.html?_r=0) an example.
 
 Since d3 is a JavaScript library like jQuery, it's relatively easy to get started. Just like with other libraries, you can use d3 in your JavaScript by linking to the latest version of the d3 source code via a `script` tag. Let's use this code to begin:
 
@@ -44,11 +44,11 @@ Since d3 is a JavaScript library like jQuery, it's relatively easy to get starte
 
 Open this page up in Chrome, hop into the console, and type `d3`. If you get an object back, you can be confident that you've set things up correctly!
 
-Note: The source in the script tag refers to version 4 of d3 (hence the `d3.v4.js`). This version of d3 was released in June of 2016. If you're reading d3 tutorials from before then, you should be aware that version 4 introduced a number of changes that aren't compatible with earlier versions of d3. We'll focus on version 4 here, but just be careful if you're reading along with older tutorials!
+Note: The source in the script tag refers to version 4 of d3 (hence the `d3.v4.js`). This version of d3 was released in June of 2016. If you're reading d3 tutorials from before then, you should be aware that version 4 introduced a number of changes that aren't compatible with earlier versions of d3. We'll focus on version 4 here, but just be careful if you're reading older tutorials!
 
 ### Selecting DOM elements with d3
 
-d3 can do a lot of data manipulation, but even if you're not working with any data, it can also be used to manipulate the DOM. While it doesn't intersect entirely with jQuery (you can't do event delegation with d3, for instance), when it comes to traversing the DOM and appending things to it, d3 and jQuery can in many cases be used interchangeably. 
+d3 can do a lot of data manipulation, but even if you're not working with any data, it can also be used to manipulate the DOM. While its functionality doesn't intersect entirely with jQuery (you can't easily do event delegation with d3, for instance), when it comes to traversing the DOM and appending things to it, d3 and jQuery can, in many cases, be used interchangeably. 
 
 Using the same HTML as in the above, hop into the console and let's make our first selection:
 
@@ -58,7 +58,7 @@ var firstSelection = d3.select("#page-title");
 
 The `d3.select` method is sort of analogous to the vanilla JavaScript `document.querySelector` method, in that both accept a string corresponding to a CSS selector, and both just search until they find a single element matching the selector. If you'd like to find all elements matching the selector, you should use `d3.selectAll` (analogous to `document.querySelectorAll`).
 
-If you look at `firstSelection` in the console, you'll see that it's got a structure we haven't seen before: it's an object constructed from the native d3 `Selection` function, and it has two properties: `_groups` and `_parents`. The underscore in front of these names indicates that they are intended to be *private* - if you find yourself accessing these properties directly, you're probably using d3 incorrectly. For example, if you want to pass from the d3 selection object to the HTML element, you can call the `.nodes` method, which will return to you an array of the HTML elements:
+If you look at `firstSelection` in the console, you'll see that it's got a structure we haven't seen before: it's an object constructed from the native d3 `Selection` function, and it has two properties: `_groups` and `_parents`. The underscore in front of these names indicates that they are intended to be *private*; if you find yourself accessing these properties directly, you're probably using d3 incorrectly. For example, if you want to pass from the d3 selection object to the HTML element, you can call the `.nodes` method, which will return to you an array of the HTML elements:
 
 ```javascript
 firstSelection.nodes()[0]; // this should return the h1 element on the page.
@@ -123,7 +123,7 @@ If you'd like to read more about the selection API in d3, head over to the [docs
 
 ### Passing functions to d3 methods
 
-One place where d3 differs from jQuery is that we can we can actually pass functions in as values to our selection methods. Check this out:
+So far we've only passed primitive values into our selection methods. But we can also pass in functions. Check this out:
 
 ```javascript
 d3.selectAll("li")
@@ -145,7 +145,7 @@ d3.selectAll("li")
 
 In this example, we're using d3 to stripe the list, so that every other item has a different background color. How did we do this? Well, in these callback functions, the second argument refers to the index of the element within the current selection group. In d3, this argument is typically denoted `i`. So the callback is basically returning a light gray hex code whenever the index is odd.
 
-What about that first argument in the callback, the one we called `d`? That's a great question! We'll come back to it in a bit.
+What about that first argument in the callback, the one we called `d`? That's a great question! We'll come to that in the next chapter.
 
 Want another example? Try the following:
 
@@ -200,7 +200,7 @@ d3.selectAll("li").on('click', function() {
 	var randomBlue = Math.floor(Math.random() * 256);
 	var randomGreen = Math.floor(Math.random() * 256);
 	var randomColor = "rgb("+randomRed+","+randomBlue+","+randomGreen+")";
-	d3.select(this).style('color',randomColor);
+	d3.select(this).style('color', randomColor);
 });
 ```
 
