@@ -13,7 +13,7 @@ By the end of this chapter, you should be able to:
 
 ### Joining data to elements
 
-In the previous chapter, we saw how d3 can be used to manipulate the DOM. However, if that were all d3 were good for, it wouldn't be that interesting; after all, jQuery can do most of the things we've already seen d3 do.
+In the previous chapter, we saw how d3 could be used to manipulate the DOM. However, if that were all d3 were good for, it wouldn't be that interesting; after all, jQuery can do most of the things we've already seen d3 do.
 
 So let's learn about what sets d3 apart. To begin, let's create some HTML boilerplate:
 
@@ -217,7 +217,7 @@ After appending the `svg`, the next thing we do is create an empty selection by 
 
 After calling `enter`, we then append rectangles to the page, one for each piece of data. Here's where the fun begins: now we have to figure out where to place the rectangles on the `svg`!
 
-The `width` is relatively straightforward: this should just be the `barWidth` we set initially. The height isn't too bad either: in this case, we want the _i_th data value to correspond to the height of the _i_th bar, so the callback function just returns the data value.
+The `width` is relatively straightforward: this should just be the `barWidth` we set initially. The height isn't too bad either: in this case, we want the _i_ th data value to correspond to the height of the _i_ th bar, so the callback function just returns the data value.
 
 Things get trickier when it comes to the `x` and `y` attributes of the rectangles. It might seem like the `y` coordinate should also equal the randomly generated height data. But remember: the value for the `y` attribute is measured from the _top_ of the `svg`, not the bottom! This is why the callback function for the `y` attribute returns `svgHeight - d` and not `d`. (If this seems confusing, try altering the callback so that it just returns `d` and see what happens!)
 
