@@ -276,7 +276,7 @@ Next, we select all of the `li`s, join them to the new data and update the text.
 
 ### Exercise
 
-Complete the [d3 Exercise](https://github.com/rithmschool/intermediate_js_exercises/tree/master/d3_exercise).
+Complete Part I of the [d3 Exercises](https://github.com/rithmschool/intermediate_js_exercises/tree/master/d3_exercises).
 
 ### Additional Resources
 
