@@ -13,7 +13,7 @@ By the end of this chapter, you should be able to:
 
 ### What is Object Oriented Programming?
 
-Object oriented programming is a method of programming that attempts to model some process or thing in the world as a __class__ or __object__.  An object in this case is not the same as JavaScript's version of an object.  Instead, you can conceptually think of a class or object as something that has data and can perform operations on that data.  With object oriented programming, the goal is to _encapsulate_ your code into logical groupings using classes so that you can reason about your code at a higher level.  Let's see an examples:
+Object oriented programming is a method of programming that attempts to model some process or thing in the world as a __class__ or __object__.  An object in this case is not the same as JavaScript's version of an object.  Instead, you can conceptually think of a class or object as something that has data and can perform operations on that data.  With object oriented programming, the goal is to _encapsulate_ your code into logical groupings using classes so that you can reason about your code at a higher level.  Let's see an example:
 
 ### Poker Example
 
