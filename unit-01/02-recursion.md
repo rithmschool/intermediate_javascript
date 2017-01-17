@@ -146,7 +146,7 @@ function allRecursive(array, condition) {
         if (arr.length === 0) return true;
         if (condition(arr[0])){
             arr.shift();
-            return this.allRecursive(arr,condition);
+            return allRecursive(arr,condition);
         } else {
             return false;
         }
