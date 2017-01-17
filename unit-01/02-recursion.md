@@ -170,7 +170,7 @@ function allRecursive(array, condition) {
     if (copy.length === 0) return true;
     if (condition(copy[0])){
         copy.shift();
-        return this.allRecursive(copy,condition);
+        return allRecursive(copy,condition);
     } else {
         return false;
     }
