@@ -1,5 +1,3 @@
-#### [⇐ Previous](./01-javascript-iterators.md) | [Table of Contents](./../readme.md) | [Next ⇒](./03-testing-javascript.md)
-
 # Recursion 
 
 ### Objectives:
@@ -14,6 +12,28 @@ By the end of this chapter, you should be able to:
 
 A recursive function is a function that calls itself. That sounds pretty crazy - why would we do this? Often, recursion is an alternative to iteration and in many cases it can actually be more elegant, resulting in less code that is more readable. However, it's essential to have what's called a _base case_ in all recursive functions, as well as an understanding of the _call stack_. Let's examine these terms a bit more.
 
+### Why use recursion?
+
+Many times, recursion can solve the same problems as iteration, but in a more elegant way. Other times, recursion is **far more useful** when solving certain types of problems. Let's think about this problem:
+
+Imagine we have an object and we're trying to figure out if a certain value exists in an object. We could easily loop through all the keys in the object and see if the value exists, but what happens when the value of a key is another object? What happens when we have something like this?
+
+```js
+var obj = {
+    data: {
+        info: {
+            innerData: {
+                moreInfo: {
+                    name: "Bob"
+                }
+            }
+        }
+    }
+}
+```
+
+We would need to loop over the `obj` variable and the `data`, `info`, `innerData` and `moreInfo` keys! Instead of writing multiple loops, we could call our function again, but with a different parameter! This idea of invoking the same function again is `recursion`. With recursive functions, each recursive call is different (accepts different input)
+
 ### Always have a base case
 
 The most important thing to have in any recursive function is a base case. A base case is a terminating case that ends the recursive calls. Without a base case, your recursive function will keep calling itself until you run out of memory. What this means is that you have too many functions on the call stack and your stack "overflows" (that's where the name StackOverflow comes from)!
@@ -22,7 +42,7 @@ Here's an example of a recursive functon without a base case:
 
 ```javascript
 function thisIsAProblem() {
-	thisIsAProblem();
+    thisIsAProblem();
 }
 ```
 
@@ -89,14 +109,130 @@ function factorial(num){
 }
 ```
 
-### Exercise
+### Scope in Recursion
 
-Complete the [Recursion Exercise](https://github.com/rithmschool/intermediate_js_exercises/tree/master/recursion_exercise)
+To help with scope in recursion, we can create a `wrapper` or `helper` function which will be called multiple times in an outer function (to provide additional scope). This is done through a process called `helper method recursion`. Let's start with a problem called `all` which accepts an array and a callback and returns true if every value in the array returns `true` when passed as parameter to the callback function. Here is an iterative solution:
+
+### Iterative Solution
+
+```js
+function all(array, condition){
+    for(var i = 0; i < array.length; i++){
+        if(!(condition(array[i]))){
+            return false;
+        }
+    }
+    return true
+}
+
+all([1,2,3,4], function(val){
+    return val > 0
+}) // true
+
+all(["1","2",3,"4"], function(val){
+    typeof val === 'string'
+}) // false
+
+```
+
+### Helper Method Recursion
+
+Now let's see how we could tackle this problem using helper method recursion:
+
+```js
+function allRecursive(array, condition) {
+    var copy = array.slice()    
+    function allRecursiveHelper(arr, cb){
+        if (arr.length === 0) return true;
+        if (condition(arr[0])){
+            arr.shift();
+            return this.allRecursive(arr,condition);
+        } else {
+            return false;
+        }
+    }
+    return allRecursiveHelper(array, condition)
+}
+
+var numbersArray = [1,2,3,4,5]
+allRecursive(numbersArray, function(v) {
+    return v > 0;
+})
+```
+
+### Pure Recursion
+
+Now let's see how we could tackle this problem using a single function:
+
+```js
+function allRecursive(array, condition) {
+    var copy = copy || array.slice();
+    if (copy.length === 0) return true;
+    if (condition(copy[0])){
+        copy.shift();
+        return this.allRecursive(copy,condition);
+    } else {
+        return false;
+    }
+}
+
+var numbersArray = [1,2,3,4,5]
+allRecursive(numbersArray, function(v) {
+    return v > 0;
+})
+```
+
+### Reimplementing document methods using recursion
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row main sidepane">
+        <h1>
+            <p class="row foo"></p>
+            <div class="row main sidepane">
+                <h2>
+                    <div class="row test">1</div>
+                </h2>
+            </div>
+        </h1>
+    </div>
+    <div class="row">
+        <div class="main">
+            <h2 class="row">
+                <div id="foo" class="row main sidepane">
+                    2
+                </div>
+            </h2>
+        </div>
+    </div>
+    <div class="row"></div>
+</body>
+</html>
+```
+
+Given the following HTML, if you needed to select an element that has an ID of `foo`, you could use the `document.getElementById` method. Try to implement that function on your own! Here are some hints:
+
+- Use helper method recursion, it will be much easier!
+- In your outer function, store a variable that will either be the element found or `null` if the element can not be found
+- In your inner function, iterate over an elements children and if you find the correct 
+- Invoke your inner function and pass in `document.body.children` so you start from the root of the DOM.
+
+Given the following HTML, if you needed to select all of the elements that are a div, you could use the `document.getElementsByTagName` method. Try to implement that function on your own! Here are some hints:
+
+- The code will be VERY similar to your previous method except you will be returning an array and not checking for the same `id`, but another property.
+
+Now given the following HTML, if you needed to select all of the elements that have a class of row, you could use the `document.getElementsByClassName` method. Try to implement that function on your own! Here are some hints:
+
+- The code will be VERY similar to your previous method except you will be checking to see if an element contains a class (research `classList` and you will find a convinient method). 
 
 ### Additional Resources
 
 [Computerphile Recursion](https://www.youtube.com/watch?v=Mv9NEXX1VHc)
 
 [Fun Fun Function Recursion](https://www.youtube.com/watch?v=k7-N8R0-KY4)
-
-#### [⇐ Previous](./01-javascript-iterators.md) | [Table of Contents](./../readme.md) | [Next ⇒](./03-testing-javascript.md)
