@@ -1,4 +1,4 @@
-#### [⇐ Previous](./10-intermediate-d3.md) | [Table of Contents](./../readme.md)
+#### [⇐ Previous](./11-introduction-to-canvas.md) | [Table of Contents](./../readme.md)
 
 # Project
 

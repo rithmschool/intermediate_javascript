@@ -10,4 +10,5 @@
 - [08 - Introduction to D3](./08-introduction-to-d3.md)
 - [09 - Data Joins in D3](./09-data-joins-in-d3.md)
 - [10 - Intermediate D3](./10-intermediate-d3.md)
-- [11 - Project](./11-project.md)
+- [11 - Introduction to Canvas](./11-introduction-to-canvas.md)
+- [12 - Project](./12-project.md)
