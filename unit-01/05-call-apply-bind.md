@@ -192,7 +192,7 @@ We see that the bind function returns a new function to us, so what bind is doin
 
 ```javascript
 function bind(fn,thisArg){
-    var outerArgs = Array.prototype.slice.call(arguments)
+    var outerArgs = [].slice.call(arguments)
     var argsWeWant = outerArgs.slice(2) // we don't want the fn and thisArg values! Let's copy from the 2nd index of the arguments array to the end!
     return function(){
         return fn.apply(thisArg,argsWeWant.concat([].slice.call(arguments))) // remember that the 2nd parameter of apply takes in an array. So we are concatenating (joining) the arguments from the outer function with the arguments from the inner function to form 1 big array of arguments to be used when the inner function is finally called.
