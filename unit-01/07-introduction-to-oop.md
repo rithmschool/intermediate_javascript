@@ -1,4 +1,4 @@
-#### [⇐ Previous](./05-call-apply-bind.md) | [Table of Contents](./../readme.md) | [Next ⇒](./07-constructor-functions.md)
+#### [⇐ Previous](./06-call-apply-bind.md) | [Table of Contents](./../readme.md) | [Next ⇒](./08-constructor-functions.md)
 
 # Introduction To Object Oriented Programming
 
@@ -71,5 +71,5 @@ We will not cover these topics in great depth but it's good to understand what t
 1. Define _encapsulation_, _abstraction_, and _inheritance_ in your own words.
 1. Think about how you would design a game of checkers. What data do you want to save?  What components are involved in a checkers game that we could turn into a class?  What would the relationship be between one class and another.
 
-#### [⇐ Previous](./05-call-apply-bind.md) | [Table of Contents](./../readme.md) | [Next ⇒](./07-constructor-functions.md)
+#### [⇐ Previous](./06-call-apply-bind.md) | [Table of Contents](./../readme.md) | [Next ⇒](./08-constructor-functions.md)
 

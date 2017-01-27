@@ -1,4 +1,4 @@
-#### [⇐ Previous](./10-intermediate-d3.md.md) | [Table of Contents](./../readme.md) | [Next ⇒](./12-project.md)
+#### [⇐ Previous](./03-testing-javascript.md) | [Table of Contents](./../readme.md) | [Next ⇒](./05-the-keyword-this.md)
 
 # Introduction To HTML Canvas
 

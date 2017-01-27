@@ -1,4 +1,4 @@
-#### [⇐ Previous](./04-the-keyword-this.md) | [Table of Contents](./../readme.md) | [Next ⇒](./06-introduction-to-oop.md)
+#### [⇐ Previous](./05-the-keyword-this.md) | [Table of Contents](./../readme.md) | [Next ⇒](./07-introduction-to-oop.md)
 
 # Call, Apply, and Bind
 
@@ -236,4 +236,4 @@ Complete the [Call Apply Bind Exercise](https://github.com/rithmschool/intermedi
 
 ### Additional Resources
 
-#### [⇐ Previous](./04-the-keyword-this.md) | [Table of Contents](./../readme.md) | [Next ⇒](./06-introduction-to-oop.md)
+#### [⇐ Previous](./05-the-keyword-this.md) | [Table of Contents](./../readme.md) | [Next ⇒](./07-introduction-to-oop.md)

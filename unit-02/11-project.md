@@ -1,7 +1,7 @@
-#### [⇐ Previous](./11-introduction-to-canvas.md) | [Table of Contents](./../readme.md)
+#### [⇐ Previous](./10-intermediate-d3.md) | [Table of Contents](./../readme.md)
 
 # Project
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, voluptatum. Eum tempora quo quas! Cum consectetur optio velit aliquam a similique eveniet maiores fugit deserunt, adipisci sed, dolore voluptatum ex.
+Make an project using all of your front end knowledge.  You could leverage an api, make a game using canvas, create a cool data visualization with d3 or anything else that sounds fun and challenging.
 
 #### [⇐ Previous](./10-intermediate-d3.md) | [Table of Contents](./../readme.md)

@@ -1,4 +1,4 @@
-#### [⇐ Previous](./02-recursion.md) | [Table of Contents](./../readme.md) | [Next ⇒](./04-the-keyword-this.md)
+#### [⇐ Previous](./02-recursion.md) | [Table of Contents](./../readme.md) | [Next ⇒](./04-introduction-to-canvas.md)
 
 # Testing JavaScript
 
@@ -332,4 +332,4 @@ Complete the [JavaScript Testing Exercise](https://github.com/rithmschool/interm
 
 [http://www.andrewsouthpaw.com/2015/01/08/beginners-guide-to-testing-with-mocha-chai/](http://www.andrewsouthpaw.com/2015/01/08/beginners-guide-to-testing-with-mocha-chai/)
 
-#### [⇐ Previous](./02-recursion.md) | [Table of Contents](./../readme.md) | [Next ⇒](./04-the-keyword-this.md)
+#### [⇐ Previous](./02-recursion.md) | [Table of Contents](./../readme.md) | [Next ⇒](./04-introduction-to-canvas.md)

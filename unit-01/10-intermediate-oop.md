@@ -1,4 +1,4 @@
-#### [⇐ Previous](./08-prototypes.md) | [Table of Contents](./../readme.md) | [Next ⇒](./10-es2015.md)
+#### [⇐ Previous](./09-prototypes.md) | [Table of Contents](./../readme.md) | [Next ⇒](./11-es2015.md)
 
 # Intermediate Object Oriented Programming
 
@@ -97,4 +97,4 @@ You can see a solution to the pong game we have described [here](https://github.
 Implement a tic tac toe game using OOP.  The starter code is in the  [tic tac toe](https://github.com/rithmschool/intermediate_js_exercises/tree/master/intermediate_oop/tic_tac_toe) folder of the intermediate javascript exercises repo.
 
 
-#### [⇐ Previous](./08-prototypes.md) | [Table of Contents](./../readme.md) | [Next ⇒](./10-es2015.md)
+#### [⇐ Previous](./09-prototypes.md) | [Table of Contents](./../readme.md) | [Next ⇒](./11-es2015.md)

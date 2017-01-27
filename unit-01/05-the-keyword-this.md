@@ -1,4 +1,4 @@
-#### [⇐ Previous](./03-testing-javascript.md) | [Table of Contents](./../readme.md) | [Next ⇒](./05-call-apply-bind.md)
+#### [⇐ Previous](./04-introduction-to-canvas.md) | [Table of Contents](./../readme.md) | [Next ⇒](./06-call-apply-bind.md)
 
 # The Keyword this
 
@@ -115,4 +115,4 @@ Make sure you have a basic understanding of these four examples, and a solid und
 
 [https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md](https://github.com/getify/You-Dont-Know-JS/blob/master/this%20%26%20object%20prototypes/ch2.md)
 
-#### [⇐ Previous](./03-testing-javascript.md) | [Table of Contents](./../readme.md) | [Next ⇒](./05-call-apply-bind.md)
+#### [⇐ Previous](./04-introduction-to-canvas.md) | [Table of Contents](./../readme.md) | [Next ⇒](./06-call-apply-bind.md)

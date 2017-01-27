@@ -1,4 +1,4 @@
-#### [⇐ Previous](./06-introduction-to-oop.md) | [Table of Contents](./../readme.md) | [Next ⇒](./08-prototypes.md)
+#### [⇐ Previous](./07-introduction-to-oop.md) | [Table of Contents](./../readme.md) | [Next ⇒](./09-prototypes.md)
 
 # Constructor Functions
 
@@ -133,4 +133,4 @@ Complete the [Constructor Functions Exercise](https://github.com/rithmschool/int
 
 ### Additional Resources
 
-#### [⇐ Previous](./06-introduction-to-oop.md) | [Table of Contents](./../readme.md) | [Next ⇒](./08-prototypes.md)
+#### [⇐ Previous](./07-introduction-to-oop.md) | [Table of Contents](./../readme.md) | [Next ⇒](./09-prototypes.md)

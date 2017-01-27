@@ -1,4 +1,4 @@
-#### [⇐ Previous](./10-es2015.md) | [Table of Contents](./../readme.md)
+#### [⇐ Previous](./11-es2015.md) | [Table of Contents](./../readme.md)
 
 # Project
 
@@ -12,4 +12,4 @@ It's time to combine everything you have learned so far in the previous couple u
 
 At this point you can build another game, a more dynamic personal website, a productivity tool using any of these public APIs, and many more possibilities!
 
-#### [⇐ Previous](./09-es2015.md) | [Table of Contents](./../readme.md)
+#### [⇐ Previous](./11-es2015.md) | [Table of Contents](./../readme.md)
