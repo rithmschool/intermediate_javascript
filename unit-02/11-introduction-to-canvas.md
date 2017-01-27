@@ -115,10 +115,12 @@ Next, let's draw a triangle.  There is no build in way to draw a triangle, but r
 
 ```js
 ctx.fillStyle = "red";
+ctx.beginPath();
 ctx.moveTo(0,0);
 ctx.lineTo(40, 40);
 ctx.lineTo(0, 80);
 ctx.fill();
+ctx.closePath();
 ```
 
 Let's say you've drawn somethings, and now you want to clear the screen and start over.  To do that, you can use `clearRect`:
