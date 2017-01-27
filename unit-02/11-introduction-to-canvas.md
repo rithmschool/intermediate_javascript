@@ -193,3 +193,7 @@ function draw() {
 ```
 
 Now you should see a square moving diagonally across your screen!
+
+### Exercise
+
+Implement this [shapes speed game](https://github.com/rithmschool/intermediate_javascript_exercises/tree/master/canvas_exercise/shapes_game) using canvas.
