@@ -63,9 +63,11 @@ function addNameToObject(obj,val){
     obj.name = val;
     return obj;
 }
+
+addNametoObject(start, "Tim");
 ```
 
-The function is **impure** because there is a side effect, we are mutating or changing the `start` variable and if we call this function again, we will get a different value!
+The function is **impure** because there is a side effect. We are mutating or changing the `start` variable and if we call this function again, we will get a different value!
 
 ```js
 var start = {};
@@ -74,9 +76,11 @@ function addNameToObject(obj,val){
     var newObj = {name: val};
     return Object.assign({}, obj, newObj);
 }
+
+addNameToObject(start, "Tim");
 ```
 
-The function is **impure** because there is a not side effect and we are not mutating or changing the `start` variable. if we call this function again, we will get a different value!
+The function is **pure** because there are no side effects and we are not mutating or changing the `start` variable. if we call this function again, we will get the same result.
 
 ```js
 var arr = [1,2,3,4]
@@ -101,7 +105,7 @@ function addToArr(arr,val){
 addToArr(arr, 5); // [1,2,3,4,5]
 ```
 
-The function is **pure** because there is a not side effect and we are notmutating or changing the `arr` variable. if we call this function again, we will get a different value!
+The function is **pure** because there are no side effects and we are not mutating or changing the `arr` variable. If we call this function again, we will get the same value!
 
 You can read more about pure functions [here](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-pure-function-d1c076bec976#.d1qdboexh), [here](https://egghead.io/lessons/javascript-redux-pure-and-impure-functions), and if you are looking for a more advanced read, take a look [here](http://www.nicoespeon.com/en/2015/01/pure-functions-javascript/)
 
